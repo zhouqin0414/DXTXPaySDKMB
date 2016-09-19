@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "libDXTXPaySDK"
-  s.version      = "1.0.2"
+  s.version      = "1.0.4"
   s.summary      = "基于支付宝与微信的支付SDK"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/zhouqin0414/DXTXPaySDKMB.git", :tag => "tag" }
+  s.source       = { :git => "https://github.com/zhouqin0414/DXTXPaySDKMB.git", :tag => "tag-1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "include/*.h"
+  s.source_files  = "include/*.h,AliPaySDK/*.framework,*.a"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -104,7 +104,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "SPaySDKResource.bundle/*.{png,storyboardc,nib},AlipaySDK.bundle/*.png"
+  # s.resources = "*.bundle,AlipaySDK/*.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "libDXTXPaySDK", "~> 1.0.1"
+  # s.dependency "libDXTXPaySDK", "~> 1.0.4"
 
 end
